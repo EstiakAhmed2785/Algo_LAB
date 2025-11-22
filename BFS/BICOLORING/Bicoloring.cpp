@@ -10,9 +10,8 @@ int main() {
         cin >> l;
 
         vector<vector<int>> graph(n);
-        vector<int> color(n, -1); // -1 = uncolored
+        vector<int> color(n, -1);
 
-        // Read edges
         for (int i = 0; i < l; i++) {
             int a, b;
             cin >> a >> b;
@@ -23,7 +22,6 @@ int main() {
         queue<int> q;
         bool isBicolor = true;
 
-        // BFS start from node 0
         color[0] = 0;
         q.push(0);
 
@@ -51,3 +49,4 @@ int main() {
     }
     return 0;
 }
+
